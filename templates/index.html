@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        {% for user in users %}
+            <div>{{user}}
+             <a href='{{user.get_absolute_url}}'><button>More info</button></a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
